@@ -1,0 +1,10 @@
+//
+// Prefix header for all source files of the 'WS2PrefsReader' target in the 'WS2PrefsReader' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
+
+#define NSDecodeObject(variable, key, decoder, className) { variable = [decoder decodeObjectForKey:key]; [variable retain]; if (variable == nil) variable = [className new]; }
+#define NSEncodeObject(variable, key, encoder) { [encoder encodeObject:variable forKey:key]; }
