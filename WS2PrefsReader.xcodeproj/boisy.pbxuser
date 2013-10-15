@@ -36,8 +36,8 @@
 			8D1107260486CEB800E47090 /* WS2PrefsReader */,
 		);
 		breakpoints = (
-			6802E2E817FDACAC0059D394 /* WS2PrefsController.m:426 */,
-			6802E30A17FDACF80059D394 /* WS2PrefsController.m:352 */,
+			6802E2E817FDACAC0059D394 /* WS2PrefsController.m:431 */,
+			6802E30A17FDACF80059D394 /* WS2PrefsController.m:357 */,
 		);
 		codeSenseManager = 6802E29A17FDA8810059D394 /* Code sense */;
 		executables = (
@@ -81,6 +81,7 @@
 			68DE8368180DB9080056555E /* PBXTextBookmark */ = 68DE8368180DB9080056555E /* PBXTextBookmark */;
 			68DE8369180DB9080056555E /* PBXTextBookmark */ = 68DE8369180DB9080056555E /* PBXTextBookmark */;
 			68DE836A180DB9080056555E /* PBXTextBookmark */ = 68DE836A180DB9080056555E /* PBXTextBookmark */;
+			68DE8374180DBFD10056555E /* PBXTextBookmark */ = 68DE8374180DBFD10056555E /* PBXTextBookmark */;
 		};
 		sourceControlManager = 6802E29917FDA8810059D394 /* Source Control */;
 		userBuildSettings = {
@@ -141,12 +142,12 @@
 	};
 	6802E29C17FDA8B90059D394 /* WS2PrefsController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 5720}}";
-			sepNavSelRange = "{4276, 215}";
-			sepNavVisRange = "{4101, 692}";
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 5317}}";
+			sepNavSelRange = "{3232, 0}";
+			sepNavVisRange = "{3017, 686}";
 		};
 	};
-	6802E2E817FDACAC0059D394 /* WS2PrefsController.m:426 */ = {
+	6802E2E817FDACAC0059D394 /* WS2PrefsController.m:431 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -158,7 +159,7 @@
 		functionName = "-getStationName";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 426;
+		lineNumber = 431;
 		location = WS2PrefsReader;
 		modificationTime = 402501133.56947;
 		originalNumberOfMultipleMatches = 1;
@@ -195,7 +196,7 @@
 		vrLen = 45;
 		vrLoc = 0;
 	};
-	6802E30A17FDACF80059D394 /* WS2PrefsController.m:352 */ = {
+	6802E30A17FDACF80059D394 /* WS2PrefsController.m:357 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -207,7 +208,7 @@
 		functionName = "-readPreferences:";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 352;
+		lineNumber = 357;
 		location = WS2PrefsReader;
 		modificationTime = 402501132.676888;
 		originalNumberOfMultipleMatches = 1;
@@ -238,7 +239,7 @@
 		fRef = 6802E29C17FDA8B90059D394 /* WS2PrefsController.m */;
 		name = "WS2PrefsController.m: 332";
 		rLen = 0;
-		rLoc = 8569;
+		rLoc = 8672;
 		rType = 0;
 		vrLen = 835;
 		vrLoc = 7166;
@@ -278,7 +279,7 @@
 		fRef = 6802E29C17FDA8B90059D394 /* WS2PrefsController.m */;
 		name = "WS2PrefsController.m: 332";
 		rLen = 0;
-		rLoc = 8569;
+		rLoc = 8672;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 7260;
@@ -288,10 +289,20 @@
 		fRef = 6802E29C17FDA8B90059D394 /* WS2PrefsController.m */;
 		name = "WS2PrefsController.m: 139";
 		rLen = 215;
-		rLoc = 4276;
+		rLoc = 4379;
 		rType = 0;
 		vrLen = 692;
 		vrLoc = 4101;
+	};
+	68DE8374180DBFD10056555E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6802E29C17FDA8B90059D394 /* WS2PrefsController.m */;
+		name = "WS2PrefsController.m: 91";
+		rLen = 0;
+		rLoc = 3232;
+		rType = 0;
+		vrLen = 686;
+		vrLoc = 3017;
 	};
 	8D1107260486CEB800E47090 /* WS2PrefsReader */ = {
 		activeExec = 0;

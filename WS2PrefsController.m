@@ -86,6 +86,11 @@
 @implementation WSWindowController
 @end
 
+@interface AboutWindowController : NSWindowController
+@end
+@implementation AboutWindowController
+@end
+
 @interface HintWindowController : WSWindowController
 @end
 @implementation HintWindowController
