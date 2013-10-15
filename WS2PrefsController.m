@@ -136,6 +136,20 @@
 @implementation WeatherPropertiesWindowController
 @end
 
+@interface HiDefWindowController : WSWindowController
+{
+}
+@end
+@implementation HiDefWindowController
+- (id)initWithCoder:(NSCoder *)aDecoder;
+{
+	if (self = [super initWithCoder:aDecoder])
+	{
+	}
+	return self;
+}
+@end
+
 @interface AgentWindowController : WSWindowController
 {
 	NSString *stationName;
