@@ -18,12 +18,12 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1391, 637}}";
 			sepNavSelRange = "{1600, 0}";
-			sepNavVisRange = "{223, 1413}";
+			sepNavVisRange = "{266, 1370}";
 		};
 	};
 	256AC3F00F4B6AF500CF3369 /* WS2PrefsReader_Prefix.pch */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1230, 361}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1230, 415}}";
 			sepNavSelRange = "{430, 0}";
 			sepNavVisRange = "{0, 430}";
 		};
@@ -36,8 +36,8 @@
 			8D1107260486CEB800E47090 /* WS2PrefsReader */,
 		);
 		breakpoints = (
-			6802E2E817FDACAC0059D394 /* WS2PrefsController.m:431 */,
-			6802E30A17FDACF80059D394 /* WS2PrefsController.m:357 */,
+			6802E2E817FDACAC0059D394 /* WS2PrefsController.m:145 */,
+			6802E30A17FDACF80059D394 /* WS2PrefsController.m:71 */,
 		);
 		codeSenseManager = 6802E29A17FDA8810059D394 /* Code sense */;
 		executables = (
@@ -66,22 +66,29 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 403552448;
-			PBXWorkspaceStateSaveDate = 403552448;
+			PBXPerProjectTemplateStateSaveDate = 404706582;
+			PBXWorkspaceStateSaveDate = 404706582;
 		};
 		perUserProjectItems = {
-			6802E2EC17FDACB00059D394 = 6802E2EC17FDACB00059D394 /* PBXTextBookmark */;
 			6802E2ED17FDACB00059D394 = 6802E2ED17FDACB00059D394 /* PlistBookmark */;
 			6802E2EE17FDACB00059D394 = 6802E2EE17FDACB00059D394 /* PBXTextBookmark */;
-			6802E3A117FDC4FD0059D394 = 6802E3A117FDC4FD0059D394 /* PBXTextBookmark */;
 			6802E3A217FDC4FD0059D394 = 6802E3A217FDC4FD0059D394 /* PBXTextBookmark */;
-			6802E3A317FDC4FD0059D394 = 6802E3A317FDC4FD0059D394 /* PBXTextBookmark */;
 			6802E3B117FDC6310059D394 = 6802E3B117FDC6310059D394 /* PBXTextBookmark */;
-			6802E3B717FDC64A0059D394 = 6802E3B717FDC64A0059D394 /* PBXTextBookmark */;
-			68DE8368180DB9080056555E /* PBXTextBookmark */ = 68DE8368180DB9080056555E /* PBXTextBookmark */;
-			68DE8369180DB9080056555E /* PBXTextBookmark */ = 68DE8369180DB9080056555E /* PBXTextBookmark */;
-			68DE836A180DB9080056555E /* PBXTextBookmark */ = 68DE836A180DB9080056555E /* PBXTextBookmark */;
-			68DE8374180DBFD10056555E /* PBXTextBookmark */ = 68DE8374180DBFD10056555E /* PBXTextBookmark */;
+			6878B15F181F551D003E416B /* PBXTextBookmark */ = 6878B15F181F551D003E416B /* PBXTextBookmark */;
+			6878B160181F551D003E416B /* PBXTextBookmark */ = 6878B160181F551D003E416B /* PBXTextBookmark */;
+			6878B1BB181F5E26003E416B /* XCBuildMessageTextBookmark */ = 6878B1BB181F5E26003E416B /* XCBuildMessageTextBookmark */;
+			6878B1BC181F5E26003E416B /* PBXTextBookmark */ = 6878B1BC181F5E26003E416B /* PBXTextBookmark */;
+			6878B1D6181F6010003E416B /* PBXTextBookmark */ = 6878B1D6181F6010003E416B /* PBXTextBookmark */;
+			6878B1D7181F6010003E416B /* XCBuildMessageTextBookmark */ = 6878B1D7181F6010003E416B /* XCBuildMessageTextBookmark */;
+			6878B1D8181F6010003E416B /* PBXTextBookmark */ = 6878B1D8181F6010003E416B /* PBXTextBookmark */;
+			6878B1E4181F6138003E416B /* PBXTextBookmark */ = 6878B1E4181F6138003E416B /* PBXTextBookmark */;
+			6878B1E5181F6138003E416B /* XCBuildMessageTextBookmark */ = 6878B1E5181F6138003E416B /* XCBuildMessageTextBookmark */;
+			6878B1E6181F6138003E416B /* PBXTextBookmark */ = 6878B1E6181F6138003E416B /* PBXTextBookmark */;
+			6878B1ED181F6182003E416B /* PBXTextBookmark */ = 6878B1ED181F6182003E416B /* PBXTextBookmark */;
+			68DE8368180DB9080056555E = 68DE8368180DB9080056555E /* PBXTextBookmark */;
+			68DE8C38180E4F5C0056555E = 68DE8C38180E4F5C0056555E /* PBXTextBookmark */;
+			68DE8C39180E4F5C0056555E = 68DE8C39180E4F5C0056555E /* PBXTextBookmark */;
+			68DE8C3A180E4F5C0056555E = 68DE8C3A180E4F5C0056555E /* PBXTextBookmark */;
 		};
 		sourceControlManager = 6802E29917FDA8810059D394 /* Source Control */;
 		userBuildSettings = {
@@ -135,19 +142,19 @@
 	};
 	6802E29B17FDA8B90059D394 /* WS2PrefsController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 1807}}";
-			sepNavSelRange = "{3733, 417}";
-			sepNavVisRange = "{3019, 1133}";
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 1703}}";
+			sepNavSelRange = "{171, 0}";
+			sepNavVisRange = "{0, 1288}";
 		};
 	};
 	6802E29C17FDA8B90059D394 /* WS2PrefsController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 5317}}";
-			sepNavSelRange = "{3232, 0}";
-			sepNavVisRange = "{3017, 686}";
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 1937}}";
+			sepNavSelRange = "{558, 0}";
+			sepNavVisRange = "{0, 979}";
 		};
 	};
-	6802E2E817FDACAC0059D394 /* WS2PrefsController.m:431 */ = {
+	6802E2E817FDACAC0059D394 /* WS2PrefsController.m:145 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -159,21 +166,11 @@
 		functionName = "-getStationName";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 431;
+		lineNumber = 145;
 		location = WS2PrefsReader;
 		modificationTime = 402501133.56947;
 		originalNumberOfMultipleMatches = 1;
 		state = 0;
-	};
-	6802E2EC17FDACB00059D394 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 256AC3F00F4B6AF500CF3369 /* WS2PrefsReader_Prefix.pch */;
-		name = "WS2PrefsReader_Prefix.pch: 11";
-		rLen = 0;
-		rLoc = 430;
-		rType = 0;
-		vrLen = 430;
-		vrLoc = 0;
 	};
 	6802E2ED17FDACB00059D394 /* PlistBookmark */ = {
 		isa = PlistBookmark;
@@ -196,7 +193,7 @@
 		vrLen = 45;
 		vrLoc = 0;
 	};
-	6802E30A17FDACF80059D394 /* WS2PrefsController.m:357 */ = {
+	6802E30A17FDACF80059D394 /* WS2PrefsController.m:71 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -208,41 +205,21 @@
 		functionName = "-readPreferences:";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 357;
+		lineNumber = 71;
 		location = WS2PrefsReader;
 		modificationTime = 402501132.676888;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
-	};
-	6802E3A117FDC4FD0059D394 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 256AC3D80F4B6AC300CF3369 /* WS2PrefsReaderAppDelegate.h */;
-		name = "WS2PrefsReaderAppDelegate.h: 13";
-		rLen = 0;
-		rLoc = 314;
-		rType = 0;
-		vrLen = 365;
-		vrLoc = 0;
 	};
 	6802E3A217FDC4FD0059D394 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 6802E29B17FDA8B90059D394 /* WS2PrefsController.h */;
 		name = "WS2PrefsController.h: 122";
 		rLen = 417;
-		rLoc = 3733;
+		rLoc = 3757;
 		rType = 0;
 		vrLen = 1133;
 		vrLoc = 3019;
-	};
-	6802E3A317FDC4FD0059D394 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 6802E29C17FDA8B90059D394 /* WS2PrefsController.m */;
-		name = "WS2PrefsController.m: 332";
-		rLen = 0;
-		rLoc = 8672;
-		rType = 0;
-		vrLen = 835;
-		vrLoc = 7166;
 	};
 	6802E3B117FDC6310059D394 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -254,15 +231,142 @@
 		vrLen = 1413;
 		vrLoc = 223;
 	};
-	6802E3B717FDC64A0059D394 /* PBXTextBookmark */ = {
+	6878B15F181F551D003E416B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 256AC3D80F4B6AC300CF3369 /* WS2PrefsReaderAppDelegate.h */;
-		name = "WS2PrefsReaderAppDelegate.h: 12";
+		fRef = 256AC3F00F4B6AF500CF3369 /* WS2PrefsReader_Prefix.pch */;
+		name = "WS2PrefsReader_Prefix.pch: 11";
 		rLen = 0;
-		rLoc = 250;
+		rLoc = 430;
 		rType = 0;
-		vrLen = 370;
+		vrLen = 430;
 		vrLoc = 0;
+	};
+	6878B160181F551D003E416B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* WS2PrefsReaderAppDelegate.m */;
+		name = "WS2PrefsReaderAppDelegate.m: 44";
+		rLen = 0;
+		rLoc = 1600;
+		rType = 0;
+		vrLen = 1370;
+		vrLoc = 266;
+	};
+	6878B16A181F5524003E416B /* WS3SiteDocumentController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {973, 542}}";
+			sepNavSelRange = "{232, 0}";
+			sepNavVisRange = "{0, 283}";
+			sepNavWindowFrame = "{{61, 99}, {1032, 670}}";
+		};
+	};
+	6878B16B181F5524003E416B /* WS3SiteDocumentController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {973, 624}}";
+			sepNavSelRange = "{238, 0}";
+			sepNavVisRange = "{151, 832}";
+			sepNavWindowFrame = "{{61, 99}, {1032, 670}}";
+		};
+	};
+	6878B1A6181F5D39003E416B /* WSClassses.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {973, 2639}}";
+			sepNavSelRange = "{2325, 0}";
+			sepNavVisRange = "{1514, 889}";
+		};
+	};
+	6878B1AB181F5D95003E416B /* WSClassses.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {670, 4108}}";
+			sepNavSelRange = "{6259, 0}";
+			sepNavVisRange = "{6152, 308}";
+		};
+	};
+	6878B1BB181F5E26003E416B /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Duplicate interface declaration for class 'WeatherAgent'";
+		fRef = 6878B16B181F5524003E416B /* WS3SiteDocumentController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 0;
+		rLoc = 10;
+		rType = 1;
+	};
+	6878B1BC181F5E26003E416B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6878B16B181F5524003E416B /* WS3SiteDocumentController.m */;
+		name = "WS3SiteDocumentController.m: 12";
+		rLen = 0;
+		rLoc = 194;
+		rType = 0;
+		vrLen = 331;
+		vrLoc = 194;
+	};
+	6878B1D6181F6010003E416B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6878B16B181F5524003E416B /* WS3SiteDocumentController.m */;
+		name = "WS3SiteDocumentController.m: 12";
+		rLen = 0;
+		rLoc = 194;
+		rType = 0;
+		vrLen = 276;
+		vrLoc = 194;
+	};
+	6878B1D7181F6010003E416B /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected specifier-qualifier-list before 'WeatherAgent'";
+		fRef = 6878B1A6181F5D39003E416B /* WSClassses.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 105;
+		rType = 1;
+	};
+	6878B1D8181F6010003E416B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6878B1A6181F5D39003E416B /* WSClassses.h */;
+		name = "WSClassses.h: 96";
+		rLen = 0;
+		rLoc = 2527;
+		rType = 0;
+		vrLen = 258;
+		vrLoc = 1759;
+	};
+	6878B1E4181F6138003E416B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6878B1A6181F5D39003E416B /* WSClassses.h */;
+		name = "WSClassses.h: 96";
+		rLen = 0;
+		rLoc = 2527;
+		rType = 0;
+		vrLen = 258;
+		vrLoc = 1759;
+	};
+	6878B1E5181F6138003E416B /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Reimplementation of class 'WeatherWiseAgent'";
+		fRef = 6878B1AB181F5D95003E416B /* WSClassses.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 0;
+		rLoc = 266;
+		rType = 1;
+	};
+	6878B1E6181F6138003E416B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6878B1AB181F5D95003E416B /* WSClassses.m */;
+		name = "WSClassses.m: 268";
+		rLen = 0;
+		rLoc = 6259;
+		rType = 0;
+		vrLen = 322;
+		vrLoc = 6107;
+	};
+	6878B1ED181F6182003E416B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6878B1AB181F5D95003E416B /* WSClassses.m */;
+		name = "WSClassses.m: 267";
+		rLen = 0;
+		rLoc = 6259;
+		rType = 0;
+		vrLen = 308;
+		vrLoc = 6152;
 	};
 	68DE8368180DB9080056555E /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -274,35 +378,35 @@
 		vrLen = 370;
 		vrLoc = 0;
 	};
-	68DE8369180DB9080056555E /* PBXTextBookmark */ = {
+	68DE8C38180E4F5C0056555E /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 6802E29C17FDA8B90059D394 /* WS2PrefsController.m */;
-		name = "WS2PrefsController.m: 332";
+		name = "WS2PrefsController.m: 90";
 		rLen = 0;
-		rLoc = 8672;
+		rLoc = 558;
 		rType = 0;
-		vrLen = 741;
-		vrLoc = 7260;
-	};
-	68DE836A180DB9080056555E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 6802E29C17FDA8B90059D394 /* WS2PrefsController.m */;
-		name = "WS2PrefsController.m: 139";
-		rLen = 215;
-		rLoc = 4379;
-		rType = 0;
-		vrLen = 692;
-		vrLoc = 4101;
-	};
-	68DE8374180DBFD10056555E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 6802E29C17FDA8B90059D394 /* WS2PrefsController.m */;
-		name = "WS2PrefsController.m: 91";
-		rLen = 0;
-		rLoc = 3232;
-		rType = 0;
-		vrLen = 686;
+		vrLen = 685;
 		vrLoc = 3017;
+	};
+	68DE8C39180E4F5C0056555E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3F00F4B6AF500CF3369 /* WS2PrefsReader_Prefix.pch */;
+		name = "WS2PrefsReader_Prefix.pch: 11";
+		rLen = 0;
+		rLoc = 430;
+		rType = 0;
+		vrLen = 430;
+		vrLoc = 0;
+	};
+	68DE8C3A180E4F5C0056555E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3F00F4B6AF500CF3369 /* WS2PrefsReader_Prefix.pch */;
+		name = "WS2PrefsReader_Prefix.pch: 11";
+		rLen = 0;
+		rLoc = 430;
+		rType = 0;
+		vrLen = 430;
+		vrLoc = 0;
 	};
 	8D1107260486CEB800E47090 /* WS2PrefsReader */ = {
 		activeExec = 0;

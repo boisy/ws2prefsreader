@@ -10,6 +10,8 @@
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* WS2PrefsReaderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* WS2PrefsReaderAppDelegate.m */; };
 		6802E29F17FDA8B90059D394 /* WS2PrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6802E29C17FDA8B90059D394 /* WS2PrefsController.m */; };
+		6878B16C181F5524003E416B /* WS3SiteDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6878B16B181F5524003E416B /* WS3SiteDocumentController.m */; };
+		6878B1AC181F5D95003E416B /* WSClassses.m in Sources */ = {isa = PBXBuildFile; fileRef = 6878B1AB181F5D95003E416B /* WSClassses.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -28,6 +30,10 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		6802E29B17FDA8B90059D394 /* WS2PrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WS2PrefsController.h; sourceTree = "<group>"; };
 		6802E29C17FDA8B90059D394 /* WS2PrefsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WS2PrefsController.m; sourceTree = "<group>"; };
+		6878B16A181F5524003E416B /* WS3SiteDocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WS3SiteDocumentController.h; sourceTree = "<group>"; };
+		6878B16B181F5524003E416B /* WS3SiteDocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WS3SiteDocumentController.m; sourceTree = "<group>"; };
+		6878B1A6181F5D39003E416B /* WSClassses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSClassses.h; sourceTree = "<group>"; };
+		6878B1AB181F5D95003E416B /* WSClassses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSClassses.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* WS2PrefsReader-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WS2PrefsReader-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* WS2PrefsReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WS2PrefsReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -47,6 +53,10 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6878B1A6181F5D39003E416B /* WSClassses.h */,
+				6878B1AB181F5D95003E416B /* WSClassses.m */,
+				6878B16A181F5524003E416B /* WS3SiteDocumentController.h */,
+				6878B16B181F5524003E416B /* WS3SiteDocumentController.m */,
 				6802E29B17FDA8B90059D394 /* WS2PrefsController.h */,
 				6802E29C17FDA8B90059D394 /* WS2PrefsController.m */,
 				256AC3D80F4B6AC300CF3369 /* WS2PrefsReaderAppDelegate.h */,
@@ -186,6 +196,8 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				256AC3DA0F4B6AC300CF3369 /* WS2PrefsReaderAppDelegate.m in Sources */,
 				6802E29F17FDA8B90059D394 /* WS2PrefsController.m in Sources */,
+				6878B16C181F5524003E416B /* WS3SiteDocumentController.m in Sources */,
+				6878B1AC181F5D95003E416B /* WSClassses.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

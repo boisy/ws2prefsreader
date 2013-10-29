@@ -6,6 +6,8 @@
 //  Copyright 2013 Boisy Pitre. All rights reserved.
 //
 
+#import "WSClassses.h"
+
 // These are the names of agents that WeatherSnoop 2 recognizes.
 // Note the deprecated list below... older version of WeatherSnoop may
 // still be out there and have these names in use.
@@ -134,3 +136,4 @@
 - (id)initWithPreferences:(NSString *)file;
 
 @end
+
