@@ -1,5 +1,5 @@
 /*
- *  WSClassses.h
+ *  WSClasses.h
  *  WS2PrefsReader
  *
  *  Created by boisy on 10/28/13.
@@ -7,7 +7,7 @@
  *
  */
 
-#import "WSClassses.h"
+#import "WSClasses.h"
 
 @implementation WeatherSite
 @synthesize name = _name;
@@ -101,11 +101,16 @@
 @synthesize siteLatitude;
 @synthesize siteElevation;
 
++ (NSString *)agentName;
+{
+	return @"???";
+}
+
 - (id)initWithCoder:(NSCoder *)aDecoder;
 {
 	if (self = [super init])
 	{
-		self.stationName = [aDecoder decodeObjectForKey:@"stationName"];
+		self.stationName = [[self class] agentName];
 		self.siteName = [aDecoder decodeObjectForKey:@"siteName"];
 		self.siteLocation = [aDecoder decodeObjectForKey:@"siteLocation"];
 		self.siteLongitude = [aDecoder decodeObjectForKey:@"siteLongitude"];
@@ -127,6 +132,7 @@
 	if (self = [super initWithCoder:aDecoder])
 	{
 		self.stationName = [aDecoder decodeObjectForKey:@"stationName"];
+		self.agent = [aDecoder decodeObjectForKey:@"agent"];
 	}
 	
 	return self;
@@ -136,7 +142,7 @@
 @implementation SerialNetworkAgent
 - (id)initWithCoder:(NSCoder *)aDecoder;
 {
-	if (self = [super init])
+	if (self = [super initWithCoder:aDecoder])
 	{
 	}
 	return self;
@@ -173,6 +179,10 @@
 @end
 
 @implementation WeatherWiseAgent
++ (NSString *)agentName;
+{
+    return @"Weatherwise Solar Pro";
+}
 @end
 
 @implementation WeatherHawkAgent
@@ -183,6 +193,11 @@
 		serverAddress = [[aDecoder decodeObjectForKey:@"serverAddress"] retain];
 	}
 	return self;
+}
+
++ (NSString *)agentName;
+{
+    return @"WeatherHawk 600 Series";
 }
 @end
 
@@ -196,6 +211,11 @@
 		syncTimeToMac = [aDecoder decodeBoolForKey:@"syncTimeToMac"];
 	}
 	return self;
+}
+
++ (NSString *)agentName;
+{
+    return @"Peet Bros ULTIMETER";
 }
 @end
 
@@ -247,6 +267,11 @@
 	}
 	return self;
 }
+
++ (NSString *)agentName;
+{
+    return @"Davis Weather Station";
+}
 @end
 
 @implementation FineOffsetAgent
@@ -276,6 +301,10 @@
 @end
 
 @implementation WeatherHawkSignatureAgent
++ (NSString *)agentName;
+{
+    return @"WeatherHawk Signature Series";
+}
 @end
 
 @interface RainWiseWS2000Agent : SerialNetworkAgent
@@ -297,5 +326,97 @@
 	}
 	return self;
 }
+
++ (NSString *)agentName;
+{
+    return @"RainWise WS-2000";
+}
 @end
 
+@interface RainWiseWCC300Agent : SerialNetworkAgent
+{
+	BOOL obtainArchive;
+	BOOL clearArchive;
+	BOOL syncTimeToMac;
+}
+@end
+
+@implementation RainWiseCC3000Agent
+- (id)initWithCoder:(NSCoder *)aDecoder;
+{
+	if (self = [super initWithCoder:aDecoder])
+	{
+		obtainArchive = [aDecoder decodeBoolForKey:@"obtainArchive"];
+		clearArchive = [aDecoder decodeBoolForKey:@"clearArchive"];
+		syncTimeToMac = [aDecoder decodeBoolForKey:@"syncTimeToMac"];
+	}
+	return self;
+}
+
++ (NSString *)agentName;
+{
+    return @"RainWise CC-3000";
+}
+@end
+
+@implementation WSDocument
+
+@synthesize agent;
+@synthesize versionInfo;
+
+- (BOOL)readFromFileWrapper:(NSFileWrapper *)fileWrapper ofType:(NSString *)typeName error:(NSError **)outError
+{
+	BOOL result = YES;
+	
+    @try
+    {
+        NSDictionary *files = [fileWrapper fileWrappers];
+        
+        // Determine this file's version
+        {
+            NSData *data = [[files objectForKey:@"VersionInfo"] regularFileContents];
+            if (nil != data)
+            {
+                self.versionInfo = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+            }
+        }
+        
+        NSData *windowData = [[files objectForKey:@"Windows"] regularFileContents];
+        NSArray *windowControllers = [NSKeyedUnarchiver unarchiveObjectWithData:windowData];
+		if (0 == [windowControllers count])
+		{
+			result = NO;
+		}
+		else
+		{
+			//		SAFE_ARC_AUTORELEASE(windowControllers);
+			
+			for (NSWindowController *x in windowControllers)
+			{
+				[self addWindowController:x];
+			}
+			
+			// Go through windowControllers for AgentWindowController... instantiate him
+			for (int i = 0; i < [self.windowControllers count]; i++)
+			{
+				WSWindowController *wc = [self.windowControllers objectAtIndex:i];
+				
+				// if this is our agent controller window, set this document's agent to that of the agent window controller's
+				if ([wc isKindOfClass:[AgentWindowController class]])
+				{
+					AgentWindowController *ac = (AgentWindowController *)wc;
+					self.agent = ac.agent;
+					break;
+				}
+			}
+		}
+    }
+    @catch (NSException *exception)
+    {
+        result = NO;
+    }
+
+    return result;
+}
+
+@end

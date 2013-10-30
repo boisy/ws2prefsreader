@@ -13,7 +13,16 @@
 
 @synthesize window;
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+- (void)openWS3SiteDocument;
+{
+	NSURL *url = [NSURL fileURLWithPath:@"/Users/boisy/Desktop/Untitled.wssite"];
+	
+	NSError *error = nil;
+	WSDocument *document = [[WSDocument alloc] initWithContentsOfURL:url ofType:@"wssite" error:&error];
+	[stationNameLabel setStringValue:document.agent.stationName];	
+}
+
+- (void)openWS2Prefs;
 {
 	// There are two places the preferences file can reside in:
 	// 1. non-sandboxed
@@ -43,6 +52,11 @@
 		// pull the stationName property from the controller and put it in the stationName label
 		[stationNameLabel setStringValue:c.stationName];	
 	}
+}
+
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+{
+	[self openWS3SiteDocument];
 }
 
 @end

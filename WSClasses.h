@@ -1,5 +1,5 @@
 /*
- *  WSClassses.h
+ *  WSClasses.h
  *  WS2PrefsReader
  *
  *  Created by boisy on 10/28/13.
@@ -107,7 +107,7 @@
 
 @end
 
-@interface SerialNetworkAgent : NSObject
+@interface SerialNetworkAgent : WeatherAgent
 @end
 
 @interface VProAgent : SerialNetworkAgent
@@ -213,3 +213,13 @@
 @interface WeatherHawkSignatureAgent : WeatherHawk600Agent
 @end
 
+@interface WSDocument : NSDocument
+{
+    NSMutableDictionary *versionInfo;
+	WeatherAgent *agent;
+}
+
+@property (retain) NSMutableDictionary *versionInfo;
+@property (retain) WeatherAgent *agent;
+
+@end
